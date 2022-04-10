@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>add show</title>
+<style>
+
+    #lg{
+     
+     float: right;
+     
+     }
+     
+     div{ margin:auto;border:2px solid rgb(92, 61, 167);border-radius:15px;background-color:rgb(194, 162, 245); width : 50%; text-align: center; margin-top:12px;margin-bottom:50px;  padding : 2px 2px 2px 2px;}
+     
+     body{background-color: rgb(180, 241, 241);}     		
+     button{padding : 2px 2px 2px 2px ; margin : 2px 2px 2px 2px;  margin-bottom: 6px; cursor : pointer;  background-color: rgb(91, 243, 154);}
+		     
+     
+     
+</style>
+</head>
+<body>
+        <a id='lg' href="logout"><button> Logout </button> </a>
+       <div>
+            <center>
+           
+            <form method="post" action="AddShow">
+            <p>movie id:</p>
+            <input id="text" type="text" name="movie_id" required>
+            <p></p>
+            <p>theater name:</p>
+            <input id="text" type="text" name="theater_name" required>
+            <p></p>
+            <p>Hall No:</p>
+            <input id="text" type="text" name="hall_no" required>
+            <p></p>
+            <p>date of Show:</p>
+            <input id="da" type="date" name="show_date" required>
+            <p></p>
+            <p>Start time of show:</p>
+            <input id="text" type="text" name="time" required>
+            <p></p>
+            <p>price of show:</p>
+            <input id="text" type="text" name="price" required>
+            <p></p>
+            <p>Total seats of show:</p>
+            <input id="text" type="text" name="total_seats" required>
+            <p></p>
+            <input type="submit" id="sub" value="Submit">
+            </form>
+            </center>
+        
+      </div>
+      
+      <script type="text/javascript">
+          new_date=new Date();
+          date=new_date.getDate();
+          month=new_date.getMonth()+1;
+          year=new_date.getFullYear();
+          
+          document.getElementById("da").value=year+"-"+month+"-"+date;
+          
+        </script>
+
+</body>
+</html>
